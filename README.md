@@ -1,45 +1,44 @@
-# Global Sales Insights
+# Global Sales & Business Intelligence Analysis
 
 ## 📋 Project Description
 
-This project provides a comprehensive analysis of a global retail company's sales data using Python and Jupyter Notebook.
+This project provides a comprehensive analysis of global retail sales using Python and Jupyter Notebook.
 
-The analysis combines sales transactions, product information, and geographic data to explore customer behavior, product performance, regional trends, and logistics efficiency. The project aims to uncover actionable business insights and support data-driven decision-making.
-
----
-
-# 🎯 Project Objectives
-
-The project focuses on answering several business questions:
-
-* Which product categories generate the highest revenue and profit?
-* Which countries and regions are the most profitable?
-* How do sales change over time?
-* What is the relationship between delivery time and profitability?
-* Which sales channels perform better?
-* Are there seasonal sales patterns?
-* Which product categories dominate different markets?
-* How can the business improve profitability and growth?
+The analysis combines transaction data, product information, and geographic data to explore sales performance, customer behavior, logistics efficiency, and market trends. The project transforms raw business data into actionable insights that support strategic decision-making.
 
 ---
 
-# 🛠️ Technology Stack
+## 🎯 Project Objectives
+
+The project aims to:
+
+* Analyze sales performance across global markets;
+* Identify the most profitable products and regions;
+* Evaluate sales channel effectiveness;
+* Study seasonal and long-term sales trends;
+* Investigate logistics performance;
+* Explore the relationship between delivery time and profitability;
+* Generate business recommendations for growth.
+
+---
+
+## 🛠️ Technology Stack
 
 * **Python 3.x**
 * **Jupyter Notebook**
+* **Google Colab**
 * **Pandas**
 * **NumPy**
 * **Matplotlib**
 * **Seaborn**
 * **Plotly Express**
-* **Google Colab**
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
-```
-Global-Sales-Insights/
+```text
+Global-Sales-Business-Intelligence/
 ├── README.md
 ├── global_sales_insights.ipynb
 ├── events.csv
@@ -49,76 +48,33 @@ Global-Sales-Insights/
 
 ---
 
-# 📊 Data Sources
+## 📊 Data Sources
 
-The project combines three datasets:
+The project integrates three datasets:
 
-## Events Table
-
-Contains transaction and order information:
-
-* Order ID
-* Product ID
-* Country Code
-* Order Date
-* Ship Date
-* Units Sold
-* Unit Price
-* Unit Cost
-* Sales Channel
+| Dataset   | Description                          |
+| --------- | ------------------------------------ |
+| Events    | Sales transactions and order details |
+| Products  | Product categories                   |
+| Countries | Geographic information               |
 
 ---
 
-## Products Table
-
-Contains product information:
-
-* Product ID
-* Product Category
-
----
-
-## Countries Table
-
-Contains geographic information:
-
-* Country Name
-* Country Code
-* Region
-* Sub-region
-
----
-
-# 🧹 Data Preparation
+## 🧹 Data Preparation
 
 Several preprocessing steps were performed:
 
-## Data Cleaning
-
-* Missing values analysis;
-* Country code imputation;
-* Invalid records removal;
-* Data consistency checks.
-
-## Data Type Conversion
-
-* Date columns converted to datetime;
-* Numeric fields corrected;
-* Text normalization.
-
-## Duplicate Detection
-
-* Duplicate records checked and removed.
-
-## Data Integration
-
-Three datasets were merged into a single analytical dataset using foreign keys.
+* Missing value handling;
+* Duplicate detection;
+* Data type conversion;
+* Country code validation;
+* Dataset integration.
 
 ---
 
-# 📈 Feature Engineering
+## 📈 Feature Engineering
 
-Additional business metrics were calculated:
+Additional business metrics were created:
 
 * Revenue;
 * Total Cost;
@@ -130,156 +86,118 @@ Additional business metrics were calculated:
 
 ---
 
-# 📊 Exploratory Data Analysis
+## ❓ Business Questions
 
-## Main Business Metrics
+This project aims to answer the following questions:
 
-The project calculates:
+* Which products generate the highest revenue and profit?
+* Which countries and regions perform best?
+* Which sales channels are the most effective?
+* How do sales evolve over time?
+* How does delivery time affect profitability?
+* Are there seasonal sales patterns?
+* Which markets offer the greatest growth opportunities?
 
-* Total revenue;
-* Total profit;
+---
+
+## 📊 Analysis Workflow
+
+### 1. Business KPI Analysis
+
+* Revenue;
+* Profit;
 * Total cost;
-* Total orders;
-* Total units sold;
-* Number of active countries.
+* Orders;
+* Units sold.
+
+### 2. Product Analysis
+
+* Product categories;
+* Profitability;
+* Category trends.
+
+### 3. Geographic Analysis
+
+* Countries;
+* Regions;
+* Market contribution.
+
+### 4. Sales Channel Analysis
+
+* Channel profitability;
+* Monthly performance;
+* Channel trends.
+
+### 5. Time Series Analysis
+
+* Monthly sales;
+* Yearly trends;
+* Seasonal patterns.
+
+### 6. Logistics Analysis
+
+* Delivery time;
+* Delivery efficiency;
+* Profitability relationships.
 
 ---
 
-## Product Analysis
+## 📉 Data Visualization
 
-* Revenue by category;
-* Cost by category;
-* Profitability comparison;
-* Category sales trends;
-* Monthly category performance.
-
----
-
-## Geographic Analysis
-
-* Top profitable countries;
-* Regional sales performance;
-* Country contribution to revenue;
-* Regional sales dynamics.
-
----
-
-## Sales Channel Analysis
-
-* Profit by sales channel;
-* Monthly channel performance;
-* Channel profitability trends.
-
----
-
-## Time Series Analysis
-
-* Sales by month;
-* Sales by weekday;
-* Sales by year;
-* Seasonal trends;
-* Revenue dynamics.
-
----
-
-## Logistics Analysis
-
-A separate section investigates delivery efficiency:
-
-* Delivery time distribution;
-* Average delivery time by product category;
-* Delivery time by country;
-* Delivery time by region;
-* Delivery trends over time.
-
----
-
-## Profit vs Delivery Time
-
-The project explores whether longer delivery periods affect profitability.
-
-The analysis includes:
-
-* Scatter plots;
-* Profit distribution;
-* Order count comparison;
-* Delivery time segmentation;
-* Business interpretation.
-
----
-
-## Long-Term Sales Trends
-
-The notebook studies:
-
-* Sales by region and year;
-* Sales by country;
-* Product category dynamics;
-* Top-performing markets;
-* Historical growth patterns.
-
----
-
-# 📉 Data Visualization
-
-The project contains numerous visualizations:
+The project includes:
 
 * Bar charts;
 * Line charts;
-* Heatmaps;
 * Scatter plots;
+* Heatmaps;
 * Histograms;
-* Comparative category charts;
-* Regional trend analysis.
+* Comparative visualizations.
 
 ---
 
-# 💡 Key Business Insights
+## 💡 Key Insights
 
 The analysis identifies:
 
-* Most profitable product categories;
-* Best-performing countries and regions;
-* Sales channel effectiveness;
+* Top-performing products;
+* Most profitable regions;
+* Effective sales channels;
 * Seasonal demand patterns;
-* Delivery efficiency trends;
-* Revenue growth opportunities;
-* Market expansion potential.
+* Logistics bottlenecks;
+* Revenue growth opportunities.
 
 ---
 
-# 🚀 Business Recommendations
+## 🚀 Business Value
 
-Based on the analysis, several strategic recommendations are proposed:
+The results can help businesses:
 
-* Expand into new geographic markets;
-* Focus investment on top-performing product categories;
+* Expand into profitable markets;
+* Optimize inventory;
 * Improve logistics efficiency;
 * Strengthen successful sales channels;
-* Increase marketing efforts in growing regions;
-* Optimize inventory planning based on seasonal demand.
+* Support strategic planning;
+* Improve overall profitability.
 
 ---
 
-# 📌 Project Highlights
+## 🎓 Skills Demonstrated
 
-This project demonstrates practical skills in:
+This project showcases practical experience in:
 
 * Data cleaning;
-* Data merging;
+* Data integration;
 * Feature engineering;
 * Exploratory Data Analysis (EDA);
-* Business analytics;
+* Business intelligence;
 * Time-series analysis;
-* Logistics analysis;
+* Logistics analytics;
 * Data visualization;
 * Business storytelling;
 * Strategic recommendations.
 
 ---
 
-# 🎓 Conclusion
+## 📌 Conclusion
 
-Global Sales Insights is a complete end-to-end data analytics project that transforms raw business data into actionable insights.
-
-The project showcases the ability to work with multiple datasets, perform advanced exploratory analysis, create meaningful visualizations, and provide practical business recommendations for improving sales performance and operational efficiency.
+Global Sales & Business Intelligence Analysis demonstrates a complete end-to-end business analytics workflow. The project combines multiple datasets, advanced exploratory analysis, feature engineering, and business interpretation to transform raw sales data into actionable insights that support strategic decision-making and business growth.
